@@ -9,8 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import pe.idat.model.Alumno;
-import pe.idat.service.BodegaServiceImpl;
+import pe.idat.service.BodegaService;
 import pe.idat.model.Bodega;
 
 @RestController
@@ -18,7 +17,7 @@ import pe.idat.model.Bodega;
 public class BodegaController {
 
 	@Autowired
-	private BodegaServiceImpl service;
+	private BodegaService service;
 	
 	@Autowired
 	@RequestMapping(path = "/listar", method = RequestMethod.GET)		
